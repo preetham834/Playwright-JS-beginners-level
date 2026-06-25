@@ -19,7 +19,7 @@ test('dialogs with prompt',async({page})=>{
     await page.goto('https://demo.automationtesting.in/Alerts.html')
     await page.getByText('Alert with Textbox ').click()
     page.on('dialog',async(dialog)=>{
-        await dialog.accept('hi im preetham')
+        await dialog.accept('hi im preetham sai raj')
     })
     page.click('[onclick="promptbox()"]')
     await expect(page.locator('[id="demo1"]')).toContainText('hi im preetham How are you today')
