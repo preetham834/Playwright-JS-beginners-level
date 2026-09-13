@@ -16,5 +16,5 @@ test('multiple checkboxes at a time',async({page})=>{
         await checkboxes.nth(i).check()
         await expect(checkboxes.nth(i)).toBeChecked()
     }
-})
+});
 //To select first or last await page.locator('#checkbox').first().check() ot last().check()
