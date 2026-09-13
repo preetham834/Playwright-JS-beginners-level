@@ -20,6 +20,6 @@ test('multiple checkboxes at a time',async({page})=>{
 test('Check first and last',async({page})=>{
     await page.goto('https://demo.automationtesting.in/Register.html')
     await page.locator('[type="checkbox"]').first().check();
-    await expect(page.locator(''[type="checkbox"]').first()).toBeChecked();
+    await expect(page.locator('[type="checkbox"]').first()).toBeChecked();
 });
 //To select first or last await page.locator('#checkbox').first().check() ot last().check()
